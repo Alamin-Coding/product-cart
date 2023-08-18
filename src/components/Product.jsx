@@ -12,6 +12,9 @@ import { ToastContainer, toast } from 'react-toastify';
 import ProductSearch from "./productSearch";
 import Rating from "react-rating";
 import '../styles/cart.css';
+import ProductLoading from "../loading/ProductLoading";
+
+
 
 
 
@@ -59,8 +62,9 @@ const Product = () => {
     <Container>
       <h2>All Products</h2>
       <ProductSearch onSearch={handleInput}/>
-      {status === statusCode.LOADING && <h2>Loading ...</h2>}
+      
       <Row>
+      {status === statusCode.LOADING && <ProductLoading cards={20} />}
         {
           searchProductList.map((product) => {
             const { id, title, description, image, price, rating } = product
