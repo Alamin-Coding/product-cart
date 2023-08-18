@@ -1,0 +1,37 @@
+.product_search{
+ max-width: 900px;
+ margin: 0 auto;
+ display: grid;
+ grid-template-columns: 1fr auto;
+ border: 1px solid #2d129b;
+ border-radius: 5px;
+ -webkit-border-radius: 5px;
+ -moz-border-radius: 5px;
+ -ms-border-radius: 5px;
+ -o-border-radius: 5px;
+ overflow: hidden;
+}
+.product_search input {
+ border: none;
+padding: 15px 10px;
+color: #2d129b;
+font-size: 16px;
+font-weight: 400;
+}
+
+.product_search button {
+ border: none;
+ background: transparent;
+ padding: 10px 30px;
+ background: #2d129b;
+ color: #f0f8ff;
+ font-size: 16px;
+ font-weight: 400;
+}
+
+.product_search input:focus,
+.product_search button:focus {
+ border: none;
+ outline: none;
+ box-shadow: none;
+}

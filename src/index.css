@@ -1,0 +1,12 @@
+nav .navbar-brand {
+ font-size: 36px;
+ font-weight: bold;
+}
+
+.navbar-nav .nav-link.active {
+ color: blue !important;
+}
+
+.row {
+ --bs-gutter-y: 1.5rem !important;
+}

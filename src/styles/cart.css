@@ -1,0 +1,35 @@
+.product_item {
+ position: relative;
+ display: flex;
+ flex-direction: column;
+ gap: 20px;
+ height: 100%;
+ padding: 30px 10px;
+}
+
+.product_item .image {
+ height: 200px;
+}
+.product_item .image img {
+ object-fit: cover;
+ width: 100%;
+ height: 100%;
+}
+.product_item .text a {
+ color: black;
+ font-weight: 500;
+}
+.product_item .text p {
+ padding-top: 20px;
+ line-height: 1.5;
+}
+.product_item .text .price_rating{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding-bottom: 50px;
+}
+.product_item .text button {
+ position: absolute;
+ bottom: 30px;
+}
